@@ -3,10 +3,6 @@ package models;
 public class Die {
     private int faceValue;
 
-    public Die(int faceValue) {
-        this.faceValue = faceValue;
-    }
-
     public void roll() {
         setFaceValue((int) (Math.random() * 6) + 1);
     }

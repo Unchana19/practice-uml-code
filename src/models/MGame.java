@@ -8,8 +8,8 @@ public class MGame {
     private final Board board;
     private final ArrayList<Player> players;
 
-    public MGame(int roundCount, Die[] dice, Board board, ArrayList<Player> players) {
-        this.roundCount = roundCount;
+    public MGame(Die[] dice, Board board, ArrayList<Player> players) {
+        setRoundCount(0);
         this.dice = dice;
         this.board = board;
         this.players = players;
