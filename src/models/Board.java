@@ -3,16 +3,16 @@ package models;
 import java.util.ArrayList;
 
 public class Board {
-    private ArrayList<Sqaure> sqaures;
+    private final ArrayList<Square> squares;
 
-    public Board(ArrayList<Sqaure> sqaures) {
-        this.sqaures = sqaures;
+    public Board(ArrayList<Square> sqaures) {
+        this.squares = sqaures;
     }
 
-    public Sqaure getSquare(Sqaure oldLocation, int faceValueTotal) {
-        int oldIndex = sqaures.indexOf(oldLocation);
-        int newIndex = (oldIndex + faceValueTotal) % sqaures.size();
-        return sqaures.get(newIndex);
+    public Square getSquare(Square oldLocation, int faceValueTotal) {
+        int oldIndex = squares.indexOf(oldLocation);
+        int newIndex = (oldIndex + faceValueTotal) % squares.size();
+        return squares.get(newIndex);
     }
 }
 

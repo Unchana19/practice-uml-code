@@ -1,9 +1,9 @@
 package models;
 
-public class Sqaure {
+public class Square {
     private String name;
 
-    public Sqaure(String name) {
+    public Square(String name) {
         this.name = name;
     }
 

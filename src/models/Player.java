@@ -1,14 +1,12 @@
 package models;
 
-import java.util.List;
-
 public class Player {
     private String name;
-    private Piece piece;
-    private Board board;
-    private List<Die> dice;
+    private final Piece piece;
+    private final Board board;
+    private final Die[] dice;
 
-    public Player(String name, Piece piece, Board board, List<Die> dice) {
+    public Player(String name, Piece piece, Board board, Die[] dice) {
         this.name = name;
         this.piece = piece;
         this.board = board;
@@ -22,8 +20,8 @@ public class Player {
             faceValueTotal += die.getFaceValue();
         }
 
-        Sqaure oldLocation = piece.getLocation();
-        Sqaure newLocation = board.getSquare(oldLocation, faceValueTotal);
+        Square oldLocation = piece.getLocation();
+        Square newLocation = board.getSquare(oldLocation, faceValueTotal);
         piece.setLocation(newLocation);
     }
 

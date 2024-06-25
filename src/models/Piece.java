@@ -1,17 +1,17 @@
 package models;
 
 public class Piece {
-    private Sqaure location;
+    private Square location;
 
-    public Piece(Sqaure location) {
+    public Piece(Square location) {
         this.location = location;
     }
 
-    public Sqaure getLocation() {
+    public Square getLocation() {
         return location;
     }
 
-    public void setLocation(Sqaure location) {
+    public void setLocation(Square location) {
         this.location = location;
     }
 }

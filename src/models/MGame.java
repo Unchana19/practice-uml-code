@@ -1,15 +1,14 @@
 package models;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MGame {
     private int roundCount;
-    private List<Die> dice;
-    private Board board;
-    private ArrayList<Player> players;
+    private final Die[] dice;
+    private final Board board;
+    private final ArrayList<Player> players;
 
-    public MGame(int roundCount, List<Die> dice, Board board, ArrayList<Player> players) {
+    public MGame(int roundCount, Die[] dice, Board board, ArrayList<Player> players) {
         this.roundCount = roundCount;
         this.dice = dice;
         this.board = board;
